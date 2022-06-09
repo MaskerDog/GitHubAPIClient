@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct HomeView: View {
+    @StateObject private var viewModel = HomeViewModel(apiService: APIService())
+    
     var body: some View {
-        SearchView()
+        SearchView(viewModel: viewModel)
     }
 }
 

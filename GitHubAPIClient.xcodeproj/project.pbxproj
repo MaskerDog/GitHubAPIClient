@@ -15,6 +15,11 @@
 		E41AC617284064300094BCF4 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41AC616284064300094BCF4 /* SearchView.swift */; };
 		E41AC6342840707C0094BCF4 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41AC6332840707C0094BCF4 /* SafariView.swift */; };
 		E41AC636284077DF0094BCF4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41AC635284077DF0094BCF4 /* HomeView.swift */; };
+		E41AC6392845A0C80094BCF4 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41AC6382845A0C80094BCF4 /* Repository.swift */; };
+		E41AC63B2845A3630094BCF4 /* SearchRepositoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41AC63A2845A3630094BCF4 /* SearchRepositoryRequest.swift */; };
+		E41AC63D2845B0C10094BCF4 /* APIServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41AC63C2845B0C10094BCF4 /* APIServiceError.swift */; };
+		E41AC63F2845B2180094BCF4 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41AC63E2845B2180094BCF4 /* APIService.swift */; };
+		E41AC6412845C08D0094BCF4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41AC6402845C08D0094BCF4 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		E41AC616284064300094BCF4 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		E41AC6332840707C0094BCF4 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		E41AC635284077DF0094BCF4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E41AC6382845A0C80094BCF4 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		E41AC63A2845A3630094BCF4 /* SearchRepositoryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryRequest.swift; sourceTree = "<group>"; };
+		E41AC63C2845B0C10094BCF4 /* APIServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceError.swift; sourceTree = "<group>"; };
+		E41AC63E2845B2180094BCF4 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		E41AC6402845C08D0094BCF4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +72,11 @@
 				E41AC606284055030094BCF4 /* GitHubAPIClientApp.swift */,
 				E41AC608284055030094BCF4 /* ContentView.swift */,
 				E41AC635284077DF0094BCF4 /* HomeView.swift */,
+				E41AC6402845C08D0094BCF4 /* HomeViewModel.swift */,
 				E41AC614284058620094BCF4 /* CardView.swift */,
 				E41AC616284064300094BCF4 /* SearchView.swift */,
 				E41AC6332840707C0094BCF4 /* SafariView.swift */,
+				E41AC6372845A0930094BCF4 /* Model */,
 				E41AC60A284055040094BCF4 /* Assets.xcassets */,
 				E41AC60C284055040094BCF4 /* Preview Content */,
 			);
@@ -77,6 +89,17 @@
 				E41AC60D284055040094BCF4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E41AC6372845A0930094BCF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E41AC6382845A0C80094BCF4 /* Repository.swift */,
+				E41AC63A2845A3630094BCF4 /* SearchRepositoryRequest.swift */,
+				E41AC63C2845B0C10094BCF4 /* APIServiceError.swift */,
+				E41AC63E2845B2180094BCF4 /* APIService.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,12 +172,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E41AC6392845A0C80094BCF4 /* Repository.swift in Sources */,
+				E41AC6412845C08D0094BCF4 /* HomeViewModel.swift in Sources */,
 				E41AC617284064300094BCF4 /* SearchView.swift in Sources */,
 				E41AC609284055030094BCF4 /* ContentView.swift in Sources */,
 				E41AC615284058620094BCF4 /* CardView.swift in Sources */,
+				E41AC63D2845B0C10094BCF4 /* APIServiceError.swift in Sources */,
 				E41AC636284077DF0094BCF4 /* HomeView.swift in Sources */,
+				E41AC63F2845B2180094BCF4 /* APIService.swift in Sources */,
 				E41AC607284055030094BCF4 /* GitHubAPIClientApp.swift in Sources */,
 				E41AC6342840707C0094BCF4 /* SafariView.swift in Sources */,
+				E41AC63B2845A3630094BCF4 /* SearchRepositoryRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
